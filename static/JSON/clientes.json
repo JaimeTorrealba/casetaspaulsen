@@ -1,0 +1,158 @@
+[
+  {
+    "id": 1,
+    "alt": "Accion preventiva",
+    "href": "http://accionpreventiva.com/",
+    "src": "clients/Accion preventiva.jpg"
+  },
+  {
+    "id": 2,
+    "alt": "ADT",
+    "href": "https://www.adt.cl/",
+    "src": "clients/ADT.png"
+  },
+  {
+    "id": 3,
+    "alt": "Agricovial",
+    "href": "https://www.agricovial.cl/",
+    "src": "clients/Agricovial.png"
+  },
+  {
+    "id": 4,
+    "alt": "Arcor",
+    "href": "https://www.arcor.cl/",
+    "src": "clients/Arcor.png"
+  },
+  {
+    "id": 5,
+    "alt": "Ariztia",
+    "href": "https://www.ariztia.com/",
+    "src": "clients/Ariztia.png"
+  },
+  {
+    "id": 6,
+    "alt": "Baumax",
+    "href": "http://baumax.cl/",
+    "src": "clients/Baumax.png"
+  },
+  {
+    "id": 7,
+    "alt": "Besalco",
+    "href": "http://www.besalco.cl/",
+    "src": "clients/Besalco.jpg"
+  },
+  {
+    "id": 8,
+    "alt": "Buinzoo",
+    "href": "http://www.buinzoo.cl/",
+    "src": "clients/Buinzoo.png"
+  },
+  {
+    "id": 9,
+    "alt": "CMPC",
+    "href": "https://www.cmpc.com/",
+    "src": "clients/CMPC.jpg"
+  },
+  {
+    "id": 10,
+    "alt": "Colun",
+    "href": "https://www.colun.cl/",
+    "src": "clients/Colun.png"
+  },
+  {
+    "id": 11,
+    "alt": "Corpirque",
+    "href": "http://www.corpirque.cl/",
+    "src": "clients/Corpirque.jpg"
+  },
+  {
+    "id": 12,
+    "alt": "Cosud",
+    "href": "http://www.cosud.com/",
+    "src": "clients/Cosud.jpg"
+  },
+  {
+    "id": 13,
+    "alt": "Craighouse",
+    "href": "http://www.craighouse.cl/",
+    "src": "clients/Craighouse.png"
+  },
+  {
+    "id": 14,
+    "alt": "DECSA",
+    "href": "https://decsa.med.uchile.cl/",
+    "src": "clients/DECSA.png"
+  },
+  {
+    "id": 15,
+    "alt": "DoucUC",
+    "href": "https://www.duoc.cl/",
+    "src": "clients/DoucUC.jpg"
+  },
+  {
+    "id": 16,
+    "alt": "Drogueria Ñuñoa",
+    "href": "https://cl.linkedin.com/company/droguer%C3%ADa-%C3%B1u%C3%B1oa",
+    "src": "clients/Drogueria Ñuñoa.png"
+  },
+  {
+    "id": 17,
+    "alt": "Ebco",
+    "href": "https://www.ebco.cl/",
+    "src": "clients/Ebco.jpg"
+  },
+  {
+    "id": 18,
+    "alt": "Falabella",
+    "href": "https://www.falabella.com/falabella-cl/",
+    "src": "clients/Falabella.png"
+  },
+  {
+    "id": 19,
+    "alt": "Fertec",
+    "href": "https://www.fertec.cl/",
+    "src": "clients/Fertec.png"
+  },
+  {
+    "id": 20,
+    "alt": "Frutexsa",
+    "href": "http://www.frutexsa.cl/",
+    "src": "clients/Frutexsa.png"
+  },
+  {
+    "id": 21,
+    "alt": "Grupo AMG",
+    "href": "https://grupoamg.cl/aseo-industrial/",
+    "src": "clients/Grupo AMG.jpg"
+  },
+  {
+    "id": 22,
+    "alt": "Inacap",
+    "href": "http://portales.inacap.cl/",
+    "src": "clients/Inacap.png"
+  },
+  {
+    "id": 23,
+    "alt": "Inarco",
+    "href": "https://inarco.cl/",
+    "src": "clients/Inarco.png"
+  },
+  {
+    "id": 24,
+    "alt": "Multiaceros",
+    "href": "https://multiaceros.cl/",
+    "src": "clients/Multiaceros.png"
+  },
+  {
+    "id": 25,
+    "alt": "Perilogistic",
+    "href": "http://www.perilogistics.cl/web/",
+    "src": "clients/Perilogistic.jpg"
+  },
+  {
+    "id": 26,
+    "alt": "Sondagua",
+    "href": "http://www.sondagua.cl/index.php/es/",
+    "src": "clients/Sondagua.jpeg"
+  }
+]
