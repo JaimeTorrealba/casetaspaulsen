@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div >
     <h1 class="text-center my-5">Contactate con nosotros</h1>
     <v-form ref="form">
       <v-row>
@@ -61,7 +61,7 @@
         </v-col>
       </v-row>
       <v-row justify="center">
-        <v-col md="6">
+        <v-col md="6" >
           <v-combobox
             v-model="modelSelected"
             :items="models"
@@ -73,15 +73,18 @@
           ></v-combobox>
           <v-textarea
             solo
+            v-model="msg"
             name="Note"
             label="Informacion adicional.."
           ></v-textarea>
         </v-col>
       </v-row>
-      <v-row class="mx-auto debug" justify="center">
-        <v-col class="debug">
-          <v-btn color="success" @click="submit"> Enviar Cotizacion </v-btn>
-          <v-btn color="error" @click="reset"> Borrar Formulario </v-btn>
+      <v-row justify="center">
+        <v-col md="6">
+          <div class="d-flex justify-space-between">
+            <v-btn color="success" @click="submit"> Enviar Cotizacion </v-btn>
+            <v-btn color="error" @click="reset"> Borrar Formulario </v-btn>
+          </div>
         </v-col>
       </v-row>
     </v-form>
@@ -108,6 +111,7 @@ export default {
       email: '',
       tlf: '',
       company: '',
+      msg: '',
       regionSelected: '',
       communeSelected: '',
       modelSelected: '',
@@ -132,27 +136,46 @@ export default {
   computed: {
     // usa bind directamente
     communeSelectable: function () {
-      let indices = ''
-      const array = [...regionYcomuna.region]
+      const regions = [...regionYcomuna.region]
       const element = this.regionSelected
-      let idx = array.indexOf(element)
       let selectable = ['Seleccione una region primero']
-      while (idx != -1) {
-        indices = idx
-        selectable = [...regionYcomuna.commune[indices]]
-        idx = array.indexOf(element, idx + 1)
-      }
+      let indices = regions.findIndex(commune => commune === element)
+      selectable = regionYcomuna.commune[indices]
       return selectable
     },
   },
   methods: {
     submit() {
+       const vm = this
       if (this.$refs.form.validate()) {
-        this.dialog = true
+        
+        fetch('/api/contact', {
+          method: 'POST',
+          body: JSON.stringify({
+            name: this.name, 
+            lastName: this.lastName, 
+            tlf: this.tlf, 
+            company: this.company, 
+            region: this.regionSelected, 
+            commune: this.communeSelected, 
+            model: this.modelSelected, 
+            email: this.email,
+            msg: this.msg
+            }),
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        }).then((res) => {
+          if (res.ok) {
+            res.text().then(function (data) {
+              vm.dialog = true
+            })
+          }
+        })
       }
     },
     reset() {
-        (this.name = ''),
+      ;(this.name = ''),
         (this.lastName = ''),
         (this.email = ''),
         (this.tlf = ''),
@@ -165,4 +188,5 @@ export default {
   },
 }
 </script>
-<style lang="css" scoped></style>
+<style lang="css" scoped>
+</style>

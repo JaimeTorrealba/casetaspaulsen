@@ -10,7 +10,25 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: "stylesheet",
+        href:
+          "https://www.jqueryscript.net/css/jquerysctipttop.css"
+      }
+  ],
+    script:[
+      {
+        src: "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js",
+        type: "text/javascript"
+      },
+      {
+        src:
+          "/360ImageRotate.min.js",
+        type: "text/javascript"
+      },
+    ]
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -61,7 +79,7 @@ export default {
       },
     },
   },
-
+  serverMiddleware: ['~/api/contact'],
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
 }

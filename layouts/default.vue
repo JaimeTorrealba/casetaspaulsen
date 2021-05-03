@@ -8,8 +8,6 @@
             alt="Logo empresas Paulsen"
             class="logo"
           />
-          <v-toolbar-title>Paulsen seguridad</v-toolbar-title>
-
           <v-spacer></v-spacer>
 
           <nuxt-link to="/">Home</nuxt-link>
@@ -24,10 +22,8 @@
         <nuxt />
       </v-container>
     </v-main>
-    <v-footer padless>
-      <v-col class="text-center" cols="12">
-    <clients />
-    <v-divider />
+    <v-footer padless color="blue-grey" dark>
+      <v-col class="text-center" cols="12" >
         {{ new Date().getFullYear() }} — <strong>Paulsen Seguridad &copy;</strong>
       </v-col>
     </v-footer>
@@ -35,15 +31,11 @@
 </template>
 
 <script>
-import clients from '@/components/clients.vue'
 export default {
-  components:{
-    clients,
-  },
   data() {
     return {
       title: 'Vuetify.js',
-      links: ['Modelos', 'Condiciones', 'Otros servicios', 'Contactanos'],
+      links: ['Condiciones', 'Otros servicios', 'Contactanos'],
     }
   },
 }
